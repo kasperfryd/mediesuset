@@ -1,0 +1,82 @@
+@import "theme";
+.lineupnav{        
+    display:grid;
+    justify-items: center;
+    background-color:$color-gray-light;
+    color:white;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    p{
+        text-align: center;
+        display:inline-grid;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding-top: $padding;
+        margin:0;
+        padding-bottom:$padding;
+        width: 100%;
+    }
+    h4{
+        text-align: center;
+    }
+}
+
+
+.lineupwrapper{
+ 
+    width: 80%;
+    margin: auto;
+}
+
+.griditem{
+    height:auto;
+    color:white;
+    div:nth-child(1){
+        width:100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    p{
+        margin:0;
+        padding: $padding*1.2;
+        font-size: 1.2rem;
+    }
+    h5{
+        margin:0;
+        padding: $padding*1.2;
+        font-size: 1.5rem;
+    }
+}
+
+.lineupgrid{
+    margin:$margin;
+    gap: $margin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.red{
+    background-color: $color-red
+}
+
+.green{
+    background-color: $color-green;
+}
+
+.blue{
+    background-color: $color-blue;
+}
+
+.purple{
+    background-color: $color-purple;
+}
+
+.active{
+    background-color: $color-gray-dark;
+}
+
+.default{
+    background-color: $color-gray-light;
+}

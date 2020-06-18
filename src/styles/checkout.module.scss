@@ -1,0 +1,152 @@
+@import "theme";
+
+h3{
+    background-color: $color-gray-dark;
+    color:white;
+    
+}
+
+.topbox{
+    p{
+    padding-top: $padding;
+    padding-bottom: $padding;
+    }
+}
+
+.wrapper{
+    width: 80%;
+    margin:auto;
+    margin-bottom:5%;
+}
+
+.midbox{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid rgb(222,222,222);
+
+    .griditem{
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr;
+        border-bottom: 1px solid rgb(222,222,222);
+        p{
+            display: inline-block;
+        }
+
+        input{
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            top: 25%;
+            position: relative;
+        }
+    }
+    .total{
+        display: grid;
+        grid-template-columns: 6fr 1fr 1fr;
+        p{
+            display: inline-block;
+        }
+    }
+}
+
+.bottombox{
+    
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+.leftgrid{
+    text-align: start;
+
+    select{
+        display:inline-block;
+        width:180px;
+        height:36px;
+        background-color:rgb(247,247,247);
+        border: solid 1px rgb(130,130,130)
+    }
+
+    .inline{
+        display:inline-block;
+    }
+
+    .antal{
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        top: 25%;
+        position: relative;
+    }
+    label{
+        display: block;
+        font-weight: 500;
+        font-size: 0.9rem;
+        padding:$padding;
+    }
+
+    input{
+        width: 95%;
+        height: 26px;
+        margin-bottom:2%;
+    }
+
+}
+
+.rightgrid{
+    display: grid;
+    grid-template-rows: 0.1fr 0.2fr 0.2fr 0.7fr;
+
+    div{
+        height:20px
+    }
+    h4{
+        padding:0;
+        margin:0;
+        margin-top:7%;
+    }
+    button{
+        width:150px;
+        height: 40px;
+        background-color:$color-blue;
+        color:white;
+        border:none;
+        position: relative;
+        justify-self: right;
+        align-self: flex-end;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: black;
+        color:white;
+    }
+    .msg{
+        font-size:1.2rem;
+        padding-left:10%;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.innergrid{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+
+    input{
+        position: relative;
+        top: 25%;
+    }
+}

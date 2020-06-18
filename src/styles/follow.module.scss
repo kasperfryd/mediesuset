@@ -1,0 +1,37 @@
+@import "theme";
+
+.follow{
+    background-color: $color-gray-medium;
+    display: grid;
+    grid-template-areas: 
+    "top top"
+    "fb tw";
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:0;
+    padding:0;
+    height:45vh;
+}
+
+.top{
+    grid-area: top;
+    font-size: 3.5rem;
+    color:white;
+}
+
+.facebook{
+    grid-area: fb;
+    margin:$margin;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.twitter{
+    grid-area: tw;
+    margin:$margin;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}

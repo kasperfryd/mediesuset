@@ -1,0 +1,119 @@
+@import "theme";
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+.daynav{
+    display:grid;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    p{
+        width: fill;
+        cursor: pointer;
+        padding: $padding*2;
+        display: inline-block;
+        color:white;
+        margin: 0;
+    }
+}
+
+h3{
+    margin:0;
+    padding: $padding;
+}
+
+.modal{
+
+    padding: 24px;
+    p{
+        text-align: start;
+    }
+
+    h2{
+        color:white;
+        padding: $padding;
+        font-size:1.8rem;
+        text-align: left;
+    }
+
+    h4{
+        text-align: left;
+        font-size: 1.6rem;
+        margin:10px;
+    }
+    img{
+        float:right;
+        width: 35%;
+        margin: 10px;
+    }
+}
+
+.active{
+    background-color:$color-blue;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 5%;
+    h3{
+        font-size: 1.4rem;
+        padding: $padding*2;
+        text-align: center;
+    }
+}
+
+.griditem{
+    width: 100%;
+    background-color: $color-gray-white;
+    color:black;
+    box-shadow: 1px 2px 1px rgba(41,41,41,0.4);
+    border-bottom: 2px solid rgb(170,170,170);
+    transition: all 0.3s ease;
+
+    p{
+        display:inline-block;
+        cursor: pointer;
+        padding-left: $padding*2;
+        padding-right: $padding*2;
+
+    }
+
+    .title{
+        padding-left: $padding*2;
+        padding-right: $padding*2;    
+    }
+
+
+    button{
+        cursor: pointer;
+        display: inline-block;
+        align-self: end;
+        font-size: 1.2rem;
+        border: none;
+        text-align: center;
+        background-color: #396999;
+        padding: 14px;
+        color: white;
+        transition: all 0.4s ease;
+        float: right;
+        position: relative;
+        top: 2px;
+        right: 1px;
+    
+    }
+
+    button:hover{
+        background-color: rgb(245,245,245);
+        color:black;
+    }
+}
+.griditem:hover{
+    background-color: rgb(200,200,200)
+}

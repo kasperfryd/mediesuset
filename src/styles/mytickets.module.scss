@@ -1,0 +1,36 @@
+@import "theme";
+
+.ticketgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 3%;
+}
+
+.ticketitem{
+    text-align: start;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 1px 2px 3px rgba(22,22,22,0.4);
+    width: 80%;
+    height: auto;
+    padding:$padding*2;
+    margin:auto;
+    margin-bottom: 16px;
+
+    button{
+        background-color: $color-blue;
+        border:none;
+        width: 80%;
+        height: 40px;
+        margin:auto;
+        color:white;
+
+    }
+
+    .button:hover{
+        color:black;
+        background-color: $color-gray-light;
+    }
+}

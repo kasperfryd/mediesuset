@@ -1,0 +1,50 @@
+@import "theme";
+
+.ticketitem{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(245,245,245);
+    margin: $margin;
+
+    a {
+        height: 40%;
+    button{
+        cursor: pointer;
+        height: 100%;
+        border: none;
+        background-color: $color-red;
+        color: white;
+    }
+
+    }
+
+    p{
+        padding:$padding*2;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    b{
+        font-size: 1.2rem;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+  .header{
+      p{
+          font-size: 1.3rem;
+      }
+      background-color: black;
+      padding: $padding /4;
+      margin: 2px;
+      color:white;
+  }

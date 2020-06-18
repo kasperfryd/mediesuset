@@ -1,0 +1,169 @@
+@import "theme";
+
+.newscontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: $margin;
+    width: 90%;
+    margin: auto;
+}
+
+.newsimage{
+    width: 100%;
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannerimage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -230px;
+}
+
+.newsitemlist{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    background-color: rgb(242,242,242);
+    border-bottom: solid 1px rgb(230,230,230);
+    box-shadow: 1px 2px 1px rgba(40,40,40,0.3);
+    gap: 4px;
+    margin-bottom: 3px;
+    transition: all 0.3s ease;
+
+    p{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    button{
+        display: inline-block;
+        width:80%;
+        height:50%;
+        text-align: center;
+        background-color: black;
+        color:white;
+        margin:$margin;
+        transition: all 0.4 ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: $color-blue;
+    }
+}
+
+.newsitemlist:hover{
+    background-color: rgb(230,230,230);
+}
+
+.newsitem{    
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 91%, rgba(201,201,201,1) 100%);
+    height: 50vh;
+    display:grid;
+    grid-template-rows: 1fr 0.3fr 0.2fr 0.3fr;
+    h5{
+        font-size: 1.2rem;
+        padding: $padding;
+        margin:0;
+        margin-left: 8px;
+    }
+    p{
+        padding: $padding;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    button{
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        background-color: black;
+        color:white;
+        margin:0;
+        transition: all 0.4 ease;
+        border: none;
+        align-self:end;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: $color-blue;
+    }
+}
+
+.nyhedsarkiv{
+    width: 100%;
+    height: 50px;
+    border: none;
+    color:white;
+    background-color: $color-blue;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    cursor: pointer;
+}
+
+.newsdate{
+    font-weight: 600;
+}
+
+.newstitle{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.shown{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.articlecontainer{
+
+    width: 90%;
+    margin:auto;
+    div{
+        transition: all 0.4s ease;
+        text-align: center;
+        svg{
+            margin-top:5%;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        svg:hover{
+            color:$color-blue;
+        }
+    }
+    
+    b{
+        display:inline-block;
+        text-align: start;
+        padding-left:1%;
+    }
+    p{
+        text-align: start;
+    }
+    h2{
+        
+        font-size: 3rem;
+    }
+    img{
+        width: 100%;
+    }
+    p:nth-of-type(1){
+        font-style: italic;
+        display:inline-block;
+    }
+    padding:$padding;
+}

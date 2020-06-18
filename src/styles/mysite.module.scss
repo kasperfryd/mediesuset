@@ -1,0 +1,44 @@
+@import "theme";
+
+.gridcontainer{
+    width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;    
+    h3{
+        width: 100%;
+        background-color: $color-gray-dark;
+        color:white;
+        margin-top: 3%;
+        padding: 16px;
+    }
+
+}
+
+.trash{
+    cursor: pointer;
+}
+
+.wrapper{
+    margin: 5%;
+}
+
+.griditem{
+    gap: 4px;
+    font-size: 1.2rem;
+    display: grid;
+    border-bottom:1px solid black;
+    grid-template-columns: 1fr 0.5fr 4fr 1fr;
+    p{
+        margin:0;
+        padding:16px;
+        display: inline-block;
+    }
+    p:nth-child(1){
+        color:white;
+    }
+
+    p:nth-child(4){
+        text-align: end;
+    }
+}

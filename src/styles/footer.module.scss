@@ -1,0 +1,61 @@
+@import "theme";
+
+.footer{
+    height: 32vh;
+    text-align: center;
+    color:white;
+    margin:0;
+    padding:0;
+    h4{
+        margin-top:0;
+        padding-top: $padding;
+        color:white;
+        font-size: 3rem;
+    }
+    background-size: cover;
+    background-position-y: -320px;
+    background-repeat: no-repeat;
+    background-color: $color-gray-light;
+    background-blend-mode: overlay;
+
+    .wrapper{
+        display: inline-block;
+        border: solid 1px white;
+        padding:2px;
+        margin:auto;
+        width: max-content;
+        display:grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    input{
+        background: none;
+        opacity: 1;
+        border:none;
+        color:white;
+        padding: 5px
+
+    }
+
+    button{
+        background-color: $color-red;
+        opacity: 1;
+        border: none;
+        color:white;
+        padding:0;
+        margin:0;
+        padding-left:6px;
+        padding-right: 6px;
+        cursor: pointer;
+    }
+}
+
+.footerbottom{
+    height: 45vh;
+    background-color: $color-gray-medium;
+}
+
+.logo{
+    position:relative;
+    top: 80px;
+}
