@@ -135,7 +135,7 @@ function CheckOut (props) {
 
     return (
         <section className={Style.wrapper}>
-        <h2>Køb billet</h2>
+        <h2>KØB BILLET</h2>
         <section className={Style.topbox}>
             <h3>INFORMATION OM DEN VALGTE BILLET</h3>
             <p>{ticketData && ticketData.item.description}</p>
@@ -166,7 +166,6 @@ function CheckOut (props) {
                 <label className={Style.inline}>Vælg camp:</label>
                 <select>
                     {ticketData && ticketData.item.camps.map((camp, index)=>{
-                        console.log(camp)
                         return (<option key={index} id={camp.id} onChange={(e)=>setCampId(e.target.id)} >{camp.name}</option>)
                     })}
                 </select>

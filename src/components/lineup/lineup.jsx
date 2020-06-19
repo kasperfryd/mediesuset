@@ -65,7 +65,7 @@ function LineUp() {
             {artistData && artistData.items && artistData.items.map((item, index) => {
             if (item.stage_name === active && !showAll){
                 return (
-                    <div className={Style.griditem}>
+                    <div key={index} className={Style.griditem}>
                         <div style={{backgroundImage:`url(${item.image})`}}></div>
                         <div style={{backgroundColor:colorArray[Math.floor(Math.random() * colorArray.length)]}}>
                             <h5 key={index}>{item.title}</h5>
@@ -76,7 +76,7 @@ function LineUp() {
             }
         if (showAll){
             return (
-                <div className={Style.griditem}>
+                <div key={index} className={Style.griditem}>
                 <div style={{backgroundImage:`url(${item.image})`}}></div>
                 <div style={{backgroundColor:colorArray[Math.floor(Math.random() * colorArray.length)]}}>
                     <h5 key={index}>{item.title}</h5>

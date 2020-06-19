@@ -19,7 +19,7 @@
 
 .griditem{
     display: grid;
-    grid-template-rows: 1fr 0.2fr 1fr 0.4fr 0.4fr 0.4fr 0.1fr;
+    grid-template-rows: 1fr 0.2fr 1fr 0.2fr 0.2fr 0.2fr 0.1fr;
 
     div{
         width: 100%;
@@ -45,6 +45,11 @@
         color:white;
     }
 
+    p{
+        margin: 0;
+        padding: 0;
+    }
+
 }
 
 .description{
@@ -63,6 +68,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -150px;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+.mainbannerimage{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+.bannerimage:hover{
+    opacity: 0.6;
 }
 
 .introtext{

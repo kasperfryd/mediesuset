@@ -68,10 +68,10 @@ function MyTickets(props) {
         <p>{msg}</p>
         </div>
         <section className={Style.ticketgrid}>
-            {allTickets && allTickets.items && allTickets.items.map((item) => {
+            {allTickets && allTickets.items && allTickets.items.map((item,index) => {
                 
                return (
-               <div className={Style.ticketitem}>
+               <div key={index} className={Style.ticketitem}>
                     <p>Navn: {item.name}</p>
                     <p>Adresse: {item.address}</p>
                     <p>Postnummer: {item.zipcode}</p>

@@ -54,7 +54,7 @@ function Camps() {
     return (
         <section>
             <header>
-                <div className={Style.bannerimage} style={imageData && {backgroundImage: `url(${imageData.items[7].image})`}}></div>
+                <div className={Style.mainbannerimage} style={imageData && {backgroundImage: `url(${imageData.items[7].image})`}}></div>
             </header>
                 <h2>CAMPS</h2>
                 <p className={Style.introtext}>På Mediesuset finder du tre camp områder som hver skiller sig ud med deres specielle stemning om du enten du er til fest og ballade eller komfort og service på højt niveua.

@@ -47,7 +47,6 @@ function Footer (props) {
         }
     }
     
-    console.log(alertContent)
 
     useEffect(() => {
         getImage()
