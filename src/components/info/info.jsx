@@ -28,14 +28,14 @@ function Info () {
                 <p><b>Adresse: </b> Øster Uttrup Vej 1, 9000 Aalborg</p>
                 <p><b>Telefon:</b> 55225522</p>
                 <div>
-                <iframe frameBorder="0" style={{ width: "100%", height: "40vh"}} 
+                <iframe title="Map" frameBorder="0" style={{ width: "100%", height: "40vh"}} 
                     src="https://maps.google.com/maps?q=tech%20college%20aalborg&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
             </div>
 
             <div>
                 <p>Kort over festivalpladsen</p>
-                <img className={Style.map} src={festivalplads}></img>
+                <img alt="festivalpladsen" className={Style.map} src={festivalplads}></img>
             </div>
 
         </section>

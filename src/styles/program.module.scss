@@ -20,6 +20,12 @@
         display: inline-block;
         color:white;
         margin: 0;
+
+        @media screen and (max-width: 600px) {
+            font-size: 0.7rem;
+            width: fit-content
+
+        }
     }
 }
 

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Style from '../../styles/navigation.module.scss'
 import Logo from '../../images/mediehuset-logo.png'
  
@@ -10,26 +10,16 @@ import {
 
 function Navigation(props) {
 
-    const [dropStatus, setDropStatus] = useState(false);
-
-    const showDropdown = () => {
-        setDropStatus(true)
-    }
-
-    const hideDropdown = () => {
-        setDropStatus(false)
-    }
-
     const logOut = () => {
         props.setLoginData(null)
-        sessionStorage.removeItem("token")
+        localStorage.removeItem("token")
     }
 
     return ( 
         <nav className={Style.navigation}>
             <div className={Style.navLogo}>
                 <img className={Style.logo} src={Logo} alt="LOGO"></img>
-                <p className={Style.logotext}><h5><b>MEDIE</b>SUSET</h5> <br/> <b>4 - 5 - 6 - 7. JULI 2019</b></p>
+                <div className={Style.logotext}><p><b>MEDIE</b>SUSET</p> <br/> <b>4 - 5 - 6 - 7. JULI 2019</b></div>
             </div>
             <ul className={Style.linkcontainer}>
                 <li className={Style.køb}><Link to="/billet"><p>KØB BILLET</p></Link></li>

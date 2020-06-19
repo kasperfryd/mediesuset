@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState} from 'react'
 import Style from '../../styles/login.module.scss'
 
 function Login(props) {

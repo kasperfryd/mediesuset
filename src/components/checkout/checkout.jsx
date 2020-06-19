@@ -8,7 +8,6 @@ function CheckOut (props) {
     const [ticketData, setTicketData] = useState(null)
     const [total, setTotal] = useState(0)
     const [quantity, setQuantity] = useState(1)
-    const [numCamps, setNumCamps] = useState(1)
     const [email, setEmail] = useState(null)
     const [password, setPassword] = useState(null)
     const [checkPass, setCheckPass] = useState(null)
@@ -117,7 +116,12 @@ function CheckOut (props) {
     useEffect(() => {
         getTicketInfo(id)
         setMsgColor("red")
+
     }, [])
+    
+    if(props.loginData === null && msg === ""){
+        setMsg("Log ind for at bestille")
+    }
 
     if (shouldReturn){
         return (
@@ -161,9 +165,9 @@ function CheckOut (props) {
                 <input defaultValue={1} onChange={(e)=>setQuantity(e.target.value)} className={Style.antal} type="number"></input>
                 <label className={Style.inline}>Vælg camp:</label>
                 <select>
-                    {ticketData && ticketData.item.camps.map((camp)=>{
+                    {ticketData && ticketData.item.camps.map((camp, index)=>{
                         console.log(camp)
-                        return (<option id={camp.id} onChange={(e)=>setCampId(e.target.id)} >{camp.name}</option>)
+                        return (<option key={index} id={camp.id} onChange={(e)=>setCampId(e.target.id)} >{camp.name}</option>)
                     })}
                 </select>
                 <h4>Indtast brugeroplysninger</h4>

@@ -8,7 +8,6 @@ function Program(props) {
     const [day, setDay] = useState("Onsdag")
     const [eventData, setEventData] = useState(null)
     const [singleEventData, setSingleEventData] = useState(null)
-    const [selectedStage, setSelectedStage] = useState(null)
     const [msg, setMsg] = useState("")
 
     const stages = ["Rød scene", "Blå scene", "Grøn scene", "Lilla scene"]
@@ -98,9 +97,6 @@ function Program(props) {
         }, 2000);
     }
 
-    console.log(eventData)
-    console.log(singleEventData)
-
     return (
         <section className={Style.wrapper}>
             <h2>PROGRAM</h2>
@@ -120,7 +116,7 @@ function Program(props) {
                     if (item.stage_name === stage && day === getDay(item.local_time.substring(8, 10))){
                         return (               
                             <div key={index} className={Style.griditem}>
-                            <p>{item.local_time.substring(11, 16)}</p><p onClick={() => {props.setModalVisible(true); getSingleEvent(item.id); setSelectedStage(item.stage_name)}} className={Style.title}>{item.title}</p>
+                            <p>{item.local_time.substring(11, 16)}</p><p onClick={() => {props.setModalVisible(true); getSingleEvent(item.id)}} className={Style.title}>{item.title}</p>
                             {props.loginData && <button onClick={() => addToUserList(item.id)}>Tilføj</button>}
                             </div>                    
                         )

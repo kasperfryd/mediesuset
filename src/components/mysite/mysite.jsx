@@ -90,17 +90,17 @@ function MySite(props) {
     }
 
     if (props.loginData){
-       let result = schedule.map((day) => {
+       let result = schedule.map((day, index) => {
             return (
-                <section className={Style.gridcontainer}>
+                <section key={index} className={Style.gridcontainer}>
                     <h3>{day.toUpperCase()}</h3>
                 {
-                 userList && userList.items.map((item) => {
+                 userList && userList.items.map((item, i) => {
 
                     if (getDay(item.datetime.substring(8, 10)) === day){
                         
                         return (
-                            <div className={Style.griditem}>
+                            <div key={i} className={Style.griditem}>
                                 <p style={{backgroundColor: stageColor(item.stage_name)}}>{item.stage_name}</p>
                                 <p>{item.datetime.substring(11, 16)}</p>
                                 <p>{item.event_title}</p>

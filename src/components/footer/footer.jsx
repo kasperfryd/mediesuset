@@ -16,8 +16,6 @@ function Footer () {
         getImage()
     }, [])
 
-    console.log(data)
-
     return (
         <> 
         <section className={Style.footer} style={{backgroundImage:`url(${data && data.items[4].image})`}}>

@@ -50,9 +50,6 @@ function Camps() {
         }
     }
 
-
-    console.log(selected)
-
     if (!selected){
     return (
         <section>
@@ -67,9 +64,9 @@ function Camps() {
                     Reservation kan foretages når du bestiller billet.
                 </p>
                 <div className={Style.grid}>
-                {campData && campData.items.map((item) => {
+                {campData && campData.items.map((item, index) => {
                     return (
-                        <div className={Style.griditem}>
+                        <div key={index} className={Style.griditem}>
                             <div style={{backgroundImage: `url(${item.image})`}}></div>
                             <h4>{item.name}</h4>
                             <p className={Style.description}>{item.description.substring(0,196)}..</p>
@@ -100,8 +97,8 @@ function Camps() {
             <p>Ved enkeltdags armbånd skal du huske at tjekke ud den efterfølgende dag inden kl. 10:00</p>
             <b>På {selected.item.name} får du:</b>
             <ul>
-                {selected.item.facilities.map((item)=>{
-                    return <li>{item.title}</li>
+                {selected.item.facilities.map((item, index)=>{
+                    return <li key={index}>{item.title}</li>
                 })}
             </ul>
             <b>Åbningstider:</b>

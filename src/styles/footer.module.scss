@@ -17,13 +17,13 @@
     background-repeat: no-repeat;
     background-color: $color-gray-light;
     background-blend-mode: overlay;
-
+    
     .wrapper{
+        width:95%;
         display: inline-block;
         border: solid 1px white;
         padding:2px;
         margin:auto;
-        width: max-content;
         display:grid;
         grid-template-columns: 1.5fr 1fr;
     }

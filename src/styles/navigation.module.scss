@@ -5,10 +5,23 @@
     display: grid;
     grid-template-columns: 0.8fr auto;
     box-shadow: 1px 2px 4px 2px rgba(22,22,22,0.4);
+
+    @media screen and (max-width: 600px) {
+       height: auto;
+        margin:0;
+        padding:0;
+        grid-template-columns: 1fr;
+    }
 }
 
 .linkcontainer{
-    overflow: visible;
+
+    @media screen and (max-width: 600px) {
+        height: auto;
+         margin:0;
+         padding:0;
+     }
+
     text-align: center;
     margin-top: 4%;
     li{
@@ -19,6 +32,22 @@
         display: inline-block;
         margin: $margin;
         padding: $padding/2;
+        
+        @media screen and (max-width: 600px) {
+            font-size: 0.8rem;
+            display:block;
+            padding:0;
+            margin:0;
+           
+        }
+    }
+
+
+    ul{
+        @media screen and (max-width: 600px) {
+            padding: 0;
+            margin:0;
+        }
     }
 
     li:hover{
@@ -30,6 +59,12 @@
         text-decoration: none;
         list-style: none;
         color:black;
+        @media screen and (max-width: 600px) {
+            font-size: 0.8rem;
+            display:block;
+            padding:0;
+            margin:0;
+        }
     }
 
  
@@ -38,6 +73,12 @@
             padding-bottom:2px;
             margin:0;
             cursor: pointer;
+            @media screen and (max-width: 600px) {
+                font-size: 0.8rem;
+                display:block;
+                padding:0;
+                margin:0;
+            }
         }
     
 }
@@ -55,15 +96,18 @@
 
     p{
         position: relative;
-        top: 20%;
+        line-height: 2px;
     }
 
-    h5{
-        font-size: 1.4rem;
-        padding:0;
-        margin:0;
-        font-weight: 300;
-        line-height:0px;
+    div{
+        font-size: 1.1rem;
+        line-height: 7px;
+        margin-top: 9%;
+    
+    }
+
+    @media screen and (max-width: 600px) {
+        display:none;
     }
 }
 

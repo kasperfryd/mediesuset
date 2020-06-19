@@ -21,8 +21,6 @@ function Tickets(props) {
         getTickets()
     }, [])
 
-    console.log(ticketData)
-
     return (
         <section>
             <h2>KØB BILLET</h2>
@@ -30,7 +28,7 @@ function Tickets(props) {
             <div className={Style.ticketgrid}>
                 {ticketData && ticketData.items.map((item, index) => {
                     if (index < 2){
-                return (<div className={Style.ticketitem}>
+                return (<div key={index} className={Style.ticketitem}>
                     <p onClick={() => {active ? setActive(false): setActive(true); setSelected(item.name)}}>{item.name}</p><b>{item.price} DKK</b>
                     <Link to={"/checkout"} onClick={() =>props.setTicketId(item.id)}><button>KØB BILLET</button></Link>
                 <div className={active && selected === item.name ? Style.shown: Style.hidden}>{item.description}</div>
@@ -41,7 +39,7 @@ function Tickets(props) {
             <div className={Style.ticketgrid}>
                 {ticketData && ticketData.items.map((item, index) => {
                     if (index > 2){
-                return (<div className={Style.ticketitem}>
+                return (<div key={"k"+index} className={Style.ticketitem}>
                     <p onClick={() => {active ? setActive(false): setActive(true); setSelected(item.name)}}>{item.name}</p><b>{item.price} DKK</b>
                     <Link to={"/checkout"} onClick={() =>props.setTicketId(item.id)}><button>KØB BILLET</button></Link>
                 <div className={active && selected === item.name ? Style.shown: Style.hidden}>{item.description}</div>

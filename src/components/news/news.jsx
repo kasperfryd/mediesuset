@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import Style from '../../styles/news.module.scss'
-import { faBackward} from '@fortawesome/free-solid-svg-icons'
 import { FaArrowLeft } from 'react-icons/fa';
 
 function News (props) {
@@ -41,10 +40,6 @@ function News (props) {
         .catch(error=>console.log(error))
     }
 
-    console.log(selected)
-    console.log(news)
-
-
     return (
     <div className={Style.newswrapper}>
     <div className={Style.bannerimage} style={{backgroundImage:`url(${imageData && imageData.items[4].image})`}}></div>
@@ -83,7 +78,7 @@ function News (props) {
 
             return (
             <div key={index} className={Style.newsitemlist}>
-                <p>Skrevet d. <p className={Style.newsdate}>{item.local_time.substring(0, 10)}</p></p>
+                <div>Skrevet d. <p className={Style.newsdate}>{item.local_time.substring(0, 10)}</p></div>
                 <p className={Style.newstitle}>{item.title}</p>
                 <button onClick={()=>getSelectedNews(item.id)}>Læs mere</button>
             </div>)

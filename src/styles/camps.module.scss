@@ -6,10 +6,18 @@
     gap: $margin;
     width: 90%;
     margin: auto;
+    @media screen and (max-width: 600px) {
+        font-size: 0.8rem;
+        display:block;
+        margin:auto;
+        text-align: center;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    
 }
 
 .griditem{
-    height: 77vh;
     display: grid;
     grid-template-rows: 1fr 0.2fr 1fr 0.4fr 0.4fr 0.4fr 0.1fr;
 
@@ -43,6 +51,10 @@
     position: relative;
     height: 150px;
     overflow: hidden;
+    @media screen and (max-width: 600px) {
+ 
+        height: 65px;
+    }
 }   
 
 .bannerimage{

@@ -6,6 +6,17 @@
     gap: $margin;
     width: 90%;
     margin: auto;
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr 1fr
+    }
+    @media screen and (max-width: 400px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 80%;
+        }
 }
 
 .newsimage{
@@ -23,6 +34,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -230px;
+    @media screen and (max-width: 600px) {
+        display: none;
+        }
 }
 
 .newsitemlist{
