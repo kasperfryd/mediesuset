@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mediesuset/static/css/main.f7f2552d.chunk.css",
+    "main.js": "/mediesuset/static/js/main.78236611.chunk.js",
+    "main.js.map": "/mediesuset/static/js/main.78236611.chunk.js.map",
+    "runtime-main.js": "/mediesuset/static/js/runtime-main.052c81be.js",
+    "runtime-main.js.map": "/mediesuset/static/js/runtime-main.052c81be.js.map",
+    "static/js/2.7615e30a.chunk.js": "/mediesuset/static/js/2.7615e30a.chunk.js",
+    "static/js/2.7615e30a.chunk.js.map": "/mediesuset/static/js/2.7615e30a.chunk.js.map",
+    "index.html": "/mediesuset/index.html",
+    "precache-manifest.bedd22a67673b804b234275eb77b2c7e.js": "/mediesuset/precache-manifest.bedd22a67673b804b234275eb77b2c7e.js",
+    "service-worker.js": "/mediesuset/service-worker.js",
+    "static/css/main.f7f2552d.chunk.css.map": "/mediesuset/static/css/main.f7f2552d.chunk.css.map",
+    "static/js/2.7615e30a.chunk.js.LICENSE.txt": "/mediesuset/static/js/2.7615e30a.chunk.js.LICENSE.txt",
+    "static/media/Hancock-kvalitet-logo.png": "/mediesuset/static/media/Hancock-kvalitet-logo.448cad89.png",
+    "static/media/mediehuset-logo.png": "/mediesuset/static/media/mediehuset-logo.09b73624.png",
+    "static/media/mediesuset-map.jpg": "/mediesuset/static/media/mediesuset-map.70cb80b0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.052c81be.js",
+    "static/js/2.7615e30a.chunk.js",
+    "static/css/main.f7f2552d.chunk.css",
+    "static/js/main.78236611.chunk.js"
+  ]
+}
