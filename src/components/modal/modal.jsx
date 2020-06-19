@@ -22,12 +22,14 @@ function Modal (props) {
     const innerdiv = {
             padding: "8px",
             backgroundColor: "rgb(245,245,245)",
-            width: "80vw",
-            minHeight: "60vh",
+            width: "auto",
             borderRadius: "6px",
             boxShadow: "2px 2px 11px -3px rgba(0,0,0,0.75)",
             textAlign: "center",
-            transform: "translateX(10%) translateY(50%)",
+            position: "fixed",
+            left: "50%",
+            top: "35%",
+            transform: "translateX(-25vw) translateY(-20vh)",
     }
 
     return (

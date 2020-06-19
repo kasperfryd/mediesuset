@@ -26,6 +26,16 @@ function App() {
   const [loginData, setLoginData] = useState(null)
   const [modalVisible, setModalVisible] = useState(false)
   const [ticketId, setTicketId] = useState(null)
+
+  const validateEmail = (mail) =>  
+{
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
+
+        return (true)
+    }
+    else
+    return (false)
+}
   
   useEffect(() => {
     if (localStorage.getItem('token')){
@@ -50,7 +60,7 @@ function App() {
         <Route path="/"><News setLoginData={setLoginData}/></Route>
       </Switch>
       <FollowUs />
-      <Footer/>
+      <Footer validateEmail={validateEmail} modalVisible={modalVisible} setModalVisible={setModalVisible} loginData={loginData}/>
     </Router>
   )
 }

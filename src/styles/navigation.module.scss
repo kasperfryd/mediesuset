@@ -103,7 +103,13 @@
         font-size: 1.1rem;
         line-height: 7px;
         margin-top: 9%;
-    
+        @media screen and (max-width: 1000px) {
+            display:none;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 0.6fr;
+        width:auto;
     }
 
     @media screen and (max-width: 600px) {

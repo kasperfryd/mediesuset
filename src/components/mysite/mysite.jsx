@@ -68,9 +68,6 @@ function MySite(props) {
         }, 2000);
     }
 
-    console.log(userList)
-    console.log(props.loginData)
-
     let schedule = ["Onsdag", "Torsdag", "Fredag", "Lørdag"];    
 
     const stageColor = (stage) => {
